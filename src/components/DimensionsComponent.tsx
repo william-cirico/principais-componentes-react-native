@@ -10,9 +10,8 @@ export default function DimensionsComponent() {
             <Text>A altura da tela é {alturaTela}</Text>
             <Text>A largura da tela é {larguraTela}</Text>
             {
-                Platform.OS === "android" ?
-                <Text>Renderizou porque estou no android</Text> :
-                <Text>Renderizou em outra plataforma</Text>
+                Platform.OS === "android" &&
+                <Text>Renderizou porque estou no android</Text>
             }
             <Text>A plataforma em que esse app está sendo executado é {Platform.OS}</Text>
             <Image 
